@@ -1,0 +1,62 @@
+a {
+	color: mediumseagreen;
+}
+
+#content {
+	font-family: "Source Sans Pro", sans-serif;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#preview {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	animation: 1s ease-out 1s showElement, 1.5s ease 5s movePreview, 1s ease-out 6.5s hidePreview;
+	animation-fill-mode: both;
+}
+
+#tutorial {
+	animation: 1s ease-out 9s showElement;
+	animation-fill-mode: backwards;
+}
+
+#configSample {
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	animation: 1s ease-out 8.5s showElement;
+	animation-fill-mode: backwards;
+}
+
+#download {
+	text-align: center;
+	animation: 1s ease-out 7.5s showElement;
+	animation-fill-mode: backwards;
+}
+
+#requirement {
+	animation: 1s ease-out 9.5s showElement;
+	animation-fill-mode: backwards;
+}
+
+@keyframes showElement {
+	from {
+		filter: opacity(0%) blur(5px);
+	}
+}
+
+@keyframes movePreview {
+	to {
+		transform: translateY(-100%);
+	}
+}
+
+@keyframes hidePreview {
+	to {
+		filter: opacity(0%) blur(5px);
+	}
+}
