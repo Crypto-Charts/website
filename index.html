@@ -12,12 +12,13 @@
 	</head>
 	<body>
 		<div id="content">
-			<img id="preview" src="preview.png">
-			<p id="tutorial">
+			<img id="preview" src="preview.png" onanimationstart="hideLoading(event)">
+			<p id="loading">Loading...</p>
+			<p id="tutorial" onanimationend="showLoading()">
 				Create a file <tt>setup.json</tt> in the same directory.<br>
 				Put an array of the currencies you own, and configure <tt>id</tt> fields according to <a href="https://coinmarketcap.com/api/" target="_blank">CoinMarketCap API</a>.
 			</p>
-<pre id="configSample"><code class="json">{
+<pre id="configSample" onanimationend="hideLoading()"><code class="json">{
   "localCurrency": {
     "id": "USD",
     "symbol": "$",

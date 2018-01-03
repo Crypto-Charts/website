@@ -18,6 +18,12 @@ a {
 	animation-fill-mode: both;
 }
 
+#loading {
+	font-size: 14px;
+	color: gray;
+	text-align: center;
+}
+
 #tutorial {
 	animation: 1s ease-out 9s showElement;
 	animation-fill-mode: backwards;
