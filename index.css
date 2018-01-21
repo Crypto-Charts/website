@@ -2,6 +2,10 @@ a {
 	color: mediumseagreen;
 }
 
+.hljs {
+	font-size-adjust: 0.4;
+}
+
 #content {
 	font-family: "Source Sans Pro", sans-serif;
 	position: absolute;
@@ -30,7 +34,7 @@ a {
 }
 
 #configSample {
-	width: 450px;
+	width: 650px;
 	margin-left: auto;
 	margin-right: auto;
 	display: none;
