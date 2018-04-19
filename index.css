@@ -48,7 +48,7 @@ a {
 	animation-fill-mode: backwards;
 }
 
-#requirement {
+#usage, #requirement {
 	animation: 1s ease-out 9.5s showElement;
 	animation-fill-mode: backwards;
 }
