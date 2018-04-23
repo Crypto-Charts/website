@@ -1,3 +1,5 @@
+"use strict"
+
 let loading, preview, configSample
 let isWebkit
 
@@ -20,7 +22,7 @@ function doHideLoading() {
 
 function hideLoading(event) {
 	if (!isWebkit) return
-	if (event.animationName != "movePreview") return
+	if (event.animationName !== "movePreview") return
 	loading.style.visibility = "hidden"
 }
 
