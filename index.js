@@ -8,21 +8,20 @@ document.addEventListener("DOMContentLoaded", function() {
 	
 	isWebkit = 'WebkitAppearance' in document.documentElement.style
 	if (!isWebkit) {
-		loading.style.display = "none"
+		doHideLoading()
 	}
 	
 	hljs.initHighlightingOnLoad()
 })
 
-function hideLoading(event) {
-	if (!isWebkit) return
-	if (event && event.animationName != "movePreview") return
-	loading.style.visibility = "hidden"
+function doHideLoading() {
+	loading.style.display = "none"
 }
 
-function showLoading() {
+function hideLoading(event) {
 	if (!isWebkit) return
-	loading.style.visibility = "visible"
+	if (event.animationName != "movePreview") return
+	loading.style.visibility = "hidden"
 }
 
 function hidePreview() {
