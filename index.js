@@ -9,11 +9,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	configSample = document.getElementById("configSample")
 	
 	isWebkit = 'WebkitAppearance' in document.documentElement.style
-	if (!isWebkit) {
-		doHideLoading()
-	}
-	
-	hljs.initHighlightingOnLoad()
+	if (isWebkit) return
+	doHideLoading()
 })
 
 function doHideLoading() {
