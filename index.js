@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	preview = document.getElementById("preview")
 	configSample = document.getElementById("configSample")
 	
-	isWebkit = 'WebkitAppearance' in document.documentElement.style
+	isWebkit = "webkitWritingMode" in document.documentElement.style
 	if (isWebkit) return
 	doHideLoading()
 })
